@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\socra\\Documents\\Dev\\backend\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {}
+    "C:\\Users\\socra\\Documents\\GitHub\\EcommerceAPI\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\socra\\Documents\\Dev\\backend\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {
+    "C:\\Users\\socra\\Documents\\GitHub\\EcommerceAPI\\Ecommerce.Domain\\Ecommerce.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\socra\\Documents\\Dev\\backend\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\socra\\Documents\\GitHub\\EcommerceAPI\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
         "projectName": "Ecommerce.Domain",
-        "projectPath": "C:\\Users\\socra\\Documents\\Dev\\backend\\Ecommerce\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
+        "projectPath": "C:\\Users\\socra\\Documents\\GitHub\\EcommerceAPI\\Ecommerce.Domain\\Ecommerce.Domain.csproj",
         "packagesPath": "C:\\Users\\socra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\socra\\Documents\\Dev\\backend\\Ecommerce\\Ecommerce.Domain\\obj\\",
+        "outputPath": "C:\\Users\\socra\\Documents\\GitHub\\EcommerceAPI\\Ecommerce.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\socra\\AppData\\Roaming\\NuGet\\NuGet.Config"
