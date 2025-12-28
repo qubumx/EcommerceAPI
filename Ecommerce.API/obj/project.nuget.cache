@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Eibngs6/sYY=",
+  "dgSpecHash": "OAW5HKnJvw8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\socra\\Documents\\Dev\\backend\\Ecommerce\\Ecommerce.API\\Ecommerce.API.csproj",
+  "projectFilePath": "C:\\Users\\socra\\Documents\\GitHub\\EcommerceAPI\\Ecommerce.API\\Ecommerce.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\socra\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.11\\microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
     "C:\\Users\\socra\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
