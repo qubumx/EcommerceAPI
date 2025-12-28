@@ -1,0 +1,247 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Microsoft.AspNetCore.OpenApi/9.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.17"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.OpenApi/1.6.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Scalar.AspNetCore/2.0.36": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Ecommerce.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Ecommerce.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ecommerce.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.Application.dll": {}
+        }
+      },
+      "Ecommerce.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Ecommerce.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.Domain.dll": {}
+        }
+      },
+      "Ecommerce.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Ecommerce.Application": "1.0.0",
+          "Ecommerce.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ecommerce.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ecommerce.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.OpenApi/9.0.11": {
+      "sha512": "rTa3lp6B8KM8AESIwLakTT6XaoUBTnjAZq2pRX6zS/BzQy6mOVUgaawRSyM0WHykHdwbfrEAmer3ys2xE4DVtg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/9.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
+      ]
+    },
+    "Microsoft.OpenApi/1.6.17": {
+      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+      "type": "package",
+      "path": "microsoft.openapi/1.6.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.6.17.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
+    "Scalar.AspNetCore/2.0.36": {
+      "sha512": "piAamX1ArrRA3+Vgz8FaO+oeintpD+qD4d5DmGcW+RtKB76H7FIqZifemPzOEl8cJYjhmwYr81gJOPaJF9+5KQ==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.0.36",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.0.36.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
+    "Ecommerce.Application/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.Application/Ecommerce.Application.csproj",
+      "msbuildProject": "../Ecommerce.Application/Ecommerce.Application.csproj"
+    },
+    "Ecommerce.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.Domain/Ecommerce.Domain.csproj",
+      "msbuildProject": "../Ecommerce.Domain/Ecommerce.Domain.csproj"
+    },
+    "Ecommerce.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Ecommerce.Infrastructure/Ecommerce.Infrastructure.csproj",
+      "msbuildProject": "../Ecommerce.Infrastructure/Ecommerce.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Ecommerce.Application >= 1.0.0",
+      "Ecommerce.Infrastructure >= 1.0.0",
+      "Microsoft.AspNetCore.OpenApi >= 9.0.11",
+      "Scalar.AspNetCore >= 2.0.*"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\socra\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\socra\\Documents\\Dev\\backend\\Ecommerce\\Ecommerce.API\\Ecommerce.API.csproj",
+      "projectName": "Ecommerce.API",
+      "projectPath": "C:\\Users\\socra\\Documents\\Dev\\backend\\Ecommerce\\Ecommerce.API\\Ecommerce.API.csproj",
+      "packagesPath": "C:\\Users\\socra\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\socra\\Documents\\Dev\\backend\\Ecommerce\\Ecommerce.API\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\socra\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "C:\\Users\\socra\\Documents\\Dev\\backend\\Ecommerce\\Ecommerce.Application\\Ecommerce.Application.csproj": {
+              "projectPath": "C:\\Users\\socra\\Documents\\Dev\\backend\\Ecommerce\\Ecommerce.Application\\Ecommerce.Application.csproj"
+            },
+            "C:\\Users\\socra\\Documents\\Dev\\backend\\Ecommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\socra\\Documents\\Dev\\backend\\Ecommerce\\Ecommerce.Infrastructure\\Ecommerce.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": {
+            "target": "Package",
+            "version": "[9.0.11, )"
+          },
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.0.*, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
