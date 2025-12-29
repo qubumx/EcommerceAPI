@@ -1,0 +1,7 @@
+services:
+  ecommerceapi:
+    image: ecommerce.api:dev
+    ports:
+      - "8585:8585"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
