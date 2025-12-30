@@ -17,7 +17,7 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                bat 'dotnet test --configuration Release'
+                sh 'dotnet test --configuration Release'
             }
         }
 
@@ -53,12 +53,12 @@ pipeline {
                     withCredentials([string(credentialsId: 'postgres-conn-string', variable: 'DB_CONNECTION_STRING')]) {
                         
                         // Detener y eliminar el contenedor antiguo si existe
-                        bat "docker stop ${CONTAINER_NAME} || true"
-                        bat "docker rm ${CONTAINER_NAME} || true"
+                        sh "docker stop ${CONTAINER_NAME} || true"
+                        sh "docker rm ${CONTAINER_NAME} || true"
 
                         // Ejecutar el nuevo contenedor
                         def taggedImage = "${IMAGE_NAME}:${env.BUILD_NUMBER}"
-                        bat """
+                        sh """
                             docker run -d --network ${DOCKER_NETWORK} --name ${CONTAINER_NAME} -p 8080:8585 \
                             -e "ASPNETCORE_ENVIRONMENT=Production" \
                             -e "ConnectionStrings:DefaultConnection=${DB_CONNECTION_STRING}" \
