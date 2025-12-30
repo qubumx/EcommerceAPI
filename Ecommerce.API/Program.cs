@@ -6,6 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+builder.WebHost.UseUrls("http://localhost:8585");
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -14,6 +16,7 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
     // Enable Scalar API reference documentation
     app.MapScalarApiReference();
+    app.UseHttpsRedirection();
 }
 
 app.UseHttpsRedirection();
