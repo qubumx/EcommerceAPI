@@ -23,7 +23,7 @@ COPY Ecommerce.Application.Tests ./Ecommerce.Application.Tests
 # Publicar SOLO la API
 # Se especifica el directorio de trabajo para que la ruta de publicación sea más limpia
 WORKDIR /src/Ecommerce.API
-RUN dotnet publish -c Release -o /app/publish --no-restore
+RUN dotnet publish -c Release -o /app/publish
 
 # ---------- RUNTIME ----------
 FROM mcr.microsoft.com/dotnet/aspnet:9.0
