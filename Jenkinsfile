@@ -15,17 +15,19 @@ pipeline {
             }
         }
 
-        stage('Build & Test') {
-            agent {
-                docker { 
-                    image 'mcr.microsoft.com/dotnet/sdk:9.0' 
+                stage('Build & Test') {
+                    agent {
+                        docker {
+                            image 'mcr.microsoft.com/dotnet/sdk:9.0'
+                        }
+                    }
+                    environment {
+                        DOTNET_CLI_HOME = pwd()
+                    }
+                    steps {
+                        sh 'dotnet test --configuration Release'
+                    }
                 }
-            }
-            steps {
-                sh 'dotnet test --configuration Release'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
