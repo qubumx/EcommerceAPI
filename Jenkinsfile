@@ -39,7 +39,6 @@ pipeline {
         }
 
         stage('Push Docker Image') {
-            when { branch 'main' }
             steps {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-credentials') {
@@ -53,7 +52,6 @@ pipeline {
         }
 
         stage('Deploy') {
-            when { branch 'main' }
             steps {
                 script {
                     // Inyectar el connection string de forma segura
